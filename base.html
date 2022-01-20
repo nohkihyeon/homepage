@@ -10,190 +10,140 @@
 			background: #000;
 		}
 
-		#table {
-			/* width: 100%; */
-			border: 1px;
-			border-collapse: collapse;
-			padding: 20px;
-			margin-top: 20px;
-		}
-
-		th,
-		td {
-			height: 30px;
-			border: 1px solid black;
-		}
-
 		#wrap {
 			width: 800px;
-			height: auto;
+			margin: 50px auto;
+			color: #333;
+			background-color: #fff;
 		}
 
-		#introhello,
-		#intro {
-			font-size: 18px;
-			font-weight: bold;
-			height: 20px;
-			background-color: #efefef;
-			border-top: 1px solid white;
-			border-bottom: 1px solid #333;
-			border-left: 5px solid #333;
+		table th,
+		table td {
+			padding: 3px;
 		}
-
-		#introhello {
-			width: 425px;
-			padding: 15px;
-		}
-
-		#intro {
-			width: 230px;
-			padding: 12px;
-			border-right: 1px solid white;
-		}
-
-		h1 {
-			padding-top: 30px;
-			padding-left: 20px;
-			display: inline-block;
-		}
-
 
 		header {
 			background-color: white;
-			height: 140px;
+			height: 89px;
+			padding: 50px 20px 0;
 			border-bottom: 1px solid #333;
 		}
 
-		ul {
+		header .menu {
+			margin-top: 30px;
 			text-align: center;
 		}
 
-		nav {
-			text-align: center;
-			width: 300px;
-			margin: 0 auto;
-
+		header .menu li {
+			display: inline-block;
+			clear: both;
+			content: "";
 		}
 
-		#content {
-			height: 270px;
-			background-color: white;
+		header .menu li a:hover {
+			color: #00f;
+			font-weight: bold;
 		}
 
-		#content .left {
-			padding: 20px;
-			height: 270px;
-			width: 500px;
+		.contents:after {
+			display: block;
+			clear: both;
+			content: "";
+		}
+
+		.contents div {
 			float: left;
-			box-sizing: border-box;
+			padding: 20px;
+		}
+
+		.contents h2 {
+			height: 49px;
+			line-height: 50px;
+			margin: 0 0 23px;
+			padding: 0 0 0 10px;
+			font-size: 18px;
+			font-weight: bold;
+			background-color: #efefef;
+			border-left: 5px solid #333;
+		}
+
+		.contents .greetings {
+			width: 459px;
+			height: 230px;
 			border-right: 1px solid #333;
 		}
 
-		#content .right {
-			padding: 20px;
-			width: 300px;
-			float: right;
-			box-sizing: border-box;
+		.contents .greetings p {
+			margin-left: 15px;
 		}
 
-		#content .write {
-			padding-top: 23px;
+		.contents .introduce {
+			width: 260px;
 		}
 
-		#footer {
-			background-color: #eee;
+		.contents .introduce table {
+			width: 100%;
+		}
+
+		footer {
+			clear: both;
 			height: 29px;
-			text-align: center;
-			border-top: 1px solid #333;
 			line-height: 30px;
+			font-size: 13px;
+			color: #000;
+			text-align: center;
+			background-color: #eee;
+			border-top: 1px solid #333;
 		}
-
-		li {
-			float: left;
-			display: inline;
-		}
-
-		li a {
-			display: inline-block;
-			margin-top: 30px;
-			padding-left: 10px;
-		}
-
-		.type a {
-			display: flex;
-			margin-left: 40px;
-			text-align: left;
-		}
-
-		.type a:hover {
-			color: #0000ff;
-
-		}
-
-		/* .type p{
-			padding-top: 23px;
-		} */
 	</style>
 </head>
-
 <body>
-	<section id="wrap">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
 		<header>
-			<h1>
-				<img src="images/new_logo.svg" alt="pionnet">
-			</h1>
-			<nav id="menu">
-				<ul>
-					<li><a ref="#home">홈</a></li>
-					<li><a ref="#hello">인사말</a></li>
-					<li><a ref="#intro">자기소개</a></li>
-					<li><a ref="#map">오시는 길</a></li>
-				</ul>
-			</nav>
+			<h1><a href="http://pionnet.co.kr/" target="_blank" title="새창으로 이동"><img src="images/new_logo.svg" alt="pionnet"></a></h1>
+			<ul class="menu">
+				<li><a href="#home">홈</a></li>
+				<li><a href="#greetings">인사말</a></li>
+				<li><a href="#introduce">자기소개</a></li>
+				<li><a href="#maps">오시는 길</a></li>
+			</ul>
 		</header>
-
-		<div id="content">
-			<div class="left">
-				<div id="introhello">
-					<p><a>인사말</a></p>
-				</div>
-				<div class="write">
-					<p>신입사원 여러분 입사 첫주를 맞이하여 수고 많으셨습니다. <br>
-						파이언넷과 함께 큰 성장을 이뤄내시길 바랍니다.
-					</p>
-				</div>
+		<div class="contents">
+			<div class="greetings">
+				<h2>인사말</h2>
+				<p>
+					신입사원 여러분, 입사 첫주를 맞이하여 수고 많으셨습니다. <br>
+					파이언넷과 함께 큰 성장을 이뤄내시길 바랍니다.
+				</p>
 			</div>
-
-			<div class="right">
-				<section id="intro">
-					<p><a>자기소개</a></p>
-				</section>
-				<table id="table">
-					<colgroup>
-
-					</colgroup>
-					<tr>
-						<th>이름</th>
-						<th><input type="text"></input></th>
-					</tr>
-					<tr>
-						<td>전화번호</td>
-						<td><input type="text"></input></td>
-					</tr>
-					<tr>
-						<td>자기소개</td>
-						<td><textarea></textarea>
-						</td>
-					</tr>
+			<div class="introduce">
+				<h2>자기소개</h2>
+				<table border="1px" summary="이름, 전화번호, 자기소개로 이루어진 테이블 입니다.">
+					<caption>자기소개</caption>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="name1">이름</label></th>
+							<td><input type="text" id="name1"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="cellphone">전화번호</label></th>
+							<td><input type="tel" id="cellphone"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="intro">자기소개</label></th>
+							<td><textarea name="intro" id="intro"></textarea></td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
-		</div>
-
-		<section id="footer">
-			<p><b>@Pionnet Corp</b></p>
-		</section>
-	</section>
-
+		</mian>
+		<!-- /header -->
+		<footer>
+			<address>&copy;Pionnet Corp.</address>
+		</footer>
+	</div>
+	<!-- wrap -->
 </body>
-
 </html>
