@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>테스트</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/common.css" type="text/css" />
+	<style type="text/css">
+		body {
+			background: #000;
+		}
+
+		#table {
+			/* width: 100%; */
+			border: 1px;
+			border-collapse: collapse;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		th,
+		td {
+			height: 30px;
+			border: 1px solid black;
+		}
+
+		#wrap {
+			width: 800px;
+			height: auto;
+		}
+
+		#introhello,
+		#intro {
+			font-size: 18px;
+			font-weight: bold;
+			height: 20px;
+			background-color: #efefef;
+			border-top: 1px solid white;
+			border-bottom: 1px solid #333;
+			border-left: 5px solid #333;
+		}
+
+		#introhello {
+			width: 425px;
+			padding: 15px;
+		}
+
+		#intro {
+			width: 230px;
+			padding: 12px;
+			border-right: 1px solid white;
+		}
+
+		h1 {
+			padding-top: 30px;
+			padding-left: 20px;
+			display: inline-block;
+		}
+
+
+		header {
+			background-color: white;
+			height: 140px;
+			border-bottom: 1px solid #333;
+		}
+
+		ul {
+			text-align: center;
+		}
+
+		nav {
+			text-align: center;
+			width: 300px;
+			margin: 0 auto;
+
+		}
+
+		#content {
+			height: 270px;
+			background-color: white;
+		}
+
+		#content .left {
+			padding: 20px;
+			height: 270px;
+			width: 500px;
+			float: left;
+			box-sizing: border-box;
+			border-right: 1px solid #333;
+		}
+
+		#content .right {
+			padding: 20px;
+			width: 300px;
+			float: right;
+			box-sizing: border-box;
+		}
+
+		#content .write {
+			padding-top: 23px;
+		}
+
+		#footer {
+			background-color: #eee;
+			height: 29px;
+			text-align: center;
+			border-top: 1px solid #333;
+			line-height: 30px;
+		}
+
+		li {
+			float: left;
+			display: inline;
+		}
+
+		li a {
+			display: inline-block;
+			margin-top: 30px;
+			padding-left: 10px;
+		}
+
+		.type a {
+			display: flex;
+			margin-left: 40px;
+			text-align: left;
+		}
+
+		.type a:hover {
+			color: #0000ff;
+
+		}
+
+		/* .type p{
+			padding-top: 23px;
+		} */
+	</style>
+</head>
+
+<body>
+	<section id="wrap">
+		<header>
+			<h1>
+				<img src="images/new_logo.svg" alt="pionnet">
+			</h1>
+			<nav id="menu">
+				<ul>
+					<li><a ref="#home">홈</a></li>
+					<li><a ref="#hello">인사말</a></li>
+					<li><a ref="#intro">자기소개</a></li>
+					<li><a ref="#map">오시는 길</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="content">
+			<div class="left">
+				<div id="introhello">
+					<p><a>인사말</a></p>
+				</div>
+				<div class="write">
+					<p>신입사원 여러분 입사 첫주를 맞이하여 수고 많으셨습니다. <br>
+						파이언넷과 함께 큰 성장을 이뤄내시길 바랍니다.
+					</p>
+				</div>
+			</div>
+
+			<div class="right">
+				<section id="intro">
+					<p><a>자기소개</a></p>
+				</section>
+				<table id="table">
+					<colgroup>
+
+					</colgroup>
+					<tr>
+						<th>이름</th>
+						<th><input type="text"></input></th>
+					</tr>
+					<tr>
+						<td>전화번호</td>
+						<td><input type="text"></input></td>
+					</tr>
+					<tr>
+						<td>자기소개</td>
+						<td><textarea></textarea>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<section id="footer">
+			<p><b>@Pionnet Corp</b></p>
+		</section>
+	</section>
+
+</body>
+
+</html>
